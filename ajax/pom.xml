@@ -90,6 +90,7 @@
                     					<source>src/main/resources/js/element/getHtml.js</source>
                     					<source>src/main/resources/js/global/getJson.js</source>
                     					<source>src/main/resources/js/global/postJson.js</source>
+                    					<source>src/main/resources/js/global/handleError.js</source>
                   					</sources>
                 				</merger>
               				</mergers>

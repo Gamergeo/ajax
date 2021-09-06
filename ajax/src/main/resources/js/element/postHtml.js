@@ -8,6 +8,9 @@ $.fn.postHtml = function(options) {
 		}
 		
 		options.success = $.mergeFunction(refreshHtml, options.success);
+		options.error = (errorMessage) => {
+			$(this).handleError(errorMessage);	
+		};
 		
 		return $.post(options);
 	});

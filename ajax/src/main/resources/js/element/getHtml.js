@@ -8,6 +8,9 @@ $.fn.getHtml = function(options) {
 		}
 		
 		options.success = $.mergeFunction(refreshHtml, options.success);
+		options.error = (errorMessage) => {
+			$(this).handleError(errorMessage);	
+		};
 		
 		return $.get(options);
 	});
