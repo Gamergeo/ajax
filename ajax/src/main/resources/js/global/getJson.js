@@ -1,7 +1,10 @@
 $.getJson = function(options) {
 
 	options.dataType = 'json';
-	options.error = $.handleError;
+	
+	if (!options.error) {
+		options.error = $.handleError;
+	}
 	
 	return $.get(options);
 }
